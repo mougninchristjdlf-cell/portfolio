@@ -19,6 +19,7 @@
       line-height: 1.6;
     }
 
+    /* --- HEADER --- */
     header {
       background: linear-gradient(135deg, #007bff, #00bfff);
       color: white;
@@ -37,6 +38,17 @@
       opacity: 0.9;
     }
 
+    /* --- IMAGE DE PROFIL --- */
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    /* --- NAVIGATION --- */
     nav {
       background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -67,6 +79,7 @@
       color: #0056b3;
     }
 
+    /* --- SECTIONS --- */
     section {
       padding: 80px 20px;
       max-width: 1000px;
@@ -158,6 +171,7 @@
 </head>
 <body>
   <header>
+    <img src="IMG_2455.jpeg" alt="Photo de profil" class="profile-picture">
     <h1>MOUGNIN Christ</h1>
     <p>Étudiant en BTS SIO</p>
   </header>
@@ -168,6 +182,8 @@
       <li><a href="#formation">Formation</a></li>
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#projects">Projets</a></li>
+      <li><a href="#epreuve-e5">Épreuve E5</a></li>
+      <li><a href="#veille-technologique">Veille Technologique</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -193,10 +209,6 @@
   <section id="skills">
     <h2>Compétences</h2>
     <div class="skills">
-      
-      
-    
-    
       <div class="skill">Réseaux</div>
       <div class="skill">Gestion de projet</div>
     </div>
@@ -216,14 +228,55 @@
     </div>
   </section>
 
+  <!-- SECTION ÉPREUVE E5 -->
+  <section id="epreuve-e5">
+    <h2>Épreuve E5 – Conception et Maintenance de Solutions Informatiques</h2>
+    <p style="text-align:center; max-width:900px; margin:auto;">
+      L’épreuve E5 du BTS SIO évalue la capacité de l’étudiant à <strong>concevoir</strong>, 
+      <strong>développer</strong> et <strong>maintenir</strong> une solution logicielle répondant à un besoin réel d’entreprise.
+      Elle s’appuie sur deux projets professionnels menés durant la formation (stages ou projets personnels), 
+      accompagnés de documentations techniques et d’une soutenance orale.
+    </p>
+
+    <br><br>
+
+    <h3>Épreuve E5</h3>
+    <p>
+      J’ai étudié l’évolution des métiers du développement face à l’intégration croissante de 
+      l’intelligence artificielle. Cette analyse m’a permis de comprendre comment les développeurs 
+      doivent adapter leurs compétences pour intégrer efficacement les outils d’IA dans leurs workflows.  
+      Cette réflexion me permet aujourd’hui d’anticiper les changements technologiques et de préparer 
+      mon avenir professionnel dans un environnement où l’IA occupe une place de plus en plus importante.
+    </p>
+  </section>
+
+  <!-- SECTION VEILLE TECHNOLOGIQUE -->
+  <section id="veille-technologique" style="margin-top:60px;">
+    <h2>Veille Technologique</h2>
+
+    <h3>Veille Technologique</h3>
+    <p>
+      L’étude des solutions d’intelligence artificielle utilisées dans le développement web m’a permis de 
+      comprendre comment ces outils transforment le travail des développeurs. J’ai analysé des services 
+      comme GitHub Copilot, ChatGPT ou JetBrains AI Assistant afin d’identifier leurs avantages, leurs 
+      limites et leur apport réel en entreprise.  
+      Cette analyse montre comment l’IA améliore la productivité, automatise certaines tâches répétitives 
+      et facilite l’écriture du code tout en réduisant les erreurs.
+    </p>
+
+    <br>
+
+    <p><strong>Sources :</strong> ZDNet, Journal du Net, GitHub Blog, OpenAI.</p>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
-    <p>📧 Email : <a href="mailto:mougninchrist@example.com">mougninchrist@example.com</a></p>
-    <p> numero téléphone : <a href="tel:064082426">0640824426</a></p>
+    <p>📧 Email : <a href="mailto:mougninchrist@example.com">mougnin.christ.jdlf@example.com</a></p>
+    <p>📞 Numéro téléphone : <a href="tel:064082426">0640824426</a></p>
   </section>
 
   <footer>
     <p>© 2025 MOUGNIN Christ — Portfolio BTS SIO</p>
   </footer>
 </body>
-</html>*
+</html>
