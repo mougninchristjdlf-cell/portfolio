@@ -3,25 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | MOUGNIN Gnonsiekan</title>
+
+<title>Portfolio - MOUGNIN Gnonsiekan</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-/* PARAMÈTRES GÉNÉRAUX */
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 scroll-behavior: smooth;
-}
-
-body {
-background: #0b0b16;
-color: #ffffff;
-line-height: 1.7;
 }
 
 :root {
@@ -32,13 +26,20 @@ line-height: 1.7;
 --text: #b9b9ca;
 }
 
-/* MENU */
+body {
+background: var(--background);
+color: white;
+line-height: 1.7;
+}
+
+/* NAVIGATION */
+
 nav {
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 20px 8%;
-background: rgba(11, 11, 22, 0.95);
+background: #10101eeF;
 position: sticky;
 top: 0;
 z-index: 1000;
@@ -46,7 +47,7 @@ border-bottom: 1px solid #292940;
 }
 
 .logo {
-font-size: 23px;
+font-size: 25px;
 font-weight: 800;
 color: var(--primary);
 }
@@ -54,13 +55,13 @@ color: var(--primary);
 nav ul {
 display: flex;
 list-style: none;
-gap: 25px;
+gap: 22px;
 }
 
 nav a {
 text-decoration: none;
 color: white;
-font-size: 14px;
+font-size: 13px;
 transition: 0.3s;
 }
 
@@ -69,31 +70,23 @@ color: var(--secondary);
 }
 
 /* ACCUEIL */
+
 header {
-min-height: 90vh;
+min-height: 85vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
 padding: 50px 20px;
+
 background:
 radial-gradient(circle at 20% 20%, #29204d 0%, transparent 40%),
 radial-gradient(circle at 80% 80%, #102d43 0%, transparent 40%);
 }
 
-.profile-picture {
-width: 170px;
-height: 170px;
-object-fit: cover;
-border-radius: 50%;
-border: 4px solid var(--primary);
-box-shadow: 0 0 30px #9b5cff80;
-margin-bottom: 25px;
-}
-
 header h1 {
-font-size: clamp(32px, 6vw, 55px);
+font-size: clamp(35px, 6vw, 60px);
 font-weight: 800;
 }
 
@@ -104,18 +97,19 @@ color: var(--primary);
 header p {
 color: var(--text);
 font-size: 18px;
-margin: 10px 0 25px;
+margin: 15px 0 30px;
 }
 
 .btn {
 display: inline-block;
 background: linear-gradient(90deg, var(--primary), var(--secondary));
 color: white;
-padding: 12px 28px;
+padding: 13px 28px;
 border-radius: 30px;
 text-decoration: none;
 font-weight: 600;
 transition: 0.3s;
+border: none;
 }
 
 .btn:hover {
@@ -124,6 +118,7 @@ box-shadow: 0 0 20px #9b5cff80;
 }
 
 /* SECTIONS */
+
 section {
 max-width: 1100px;
 margin: auto;
@@ -140,7 +135,8 @@ margin-bottom: 45px;
 color: var(--primary);
 }
 
-/* À PROPOS */
+/* A PROPOS */
+
 .about-content {
 background: var(--card);
 padding: 35px;
@@ -151,9 +147,10 @@ text-align: center;
 }
 
 /* FORMATION */
+
 .formation-card {
 background: var(--card);
-padding: 25px;
+padding: 30px;
 border-radius: 15px;
 border: 1px solid #292940;
 transition: 0.3s;
@@ -166,14 +163,16 @@ border-color: var(--primary);
 
 .formation-card h3 {
 color: var(--secondary);
-margin-bottom: 10px;
+margin-bottom: 12px;
 }
 
 .formation-card p {
 color: var(--text);
+margin-bottom: 8px;
 }
 
-/* COMPÉTENCES */
+/* COMPETENCES */
+
 .skills-container {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -190,17 +189,17 @@ transition: 0.3s;
 }
 
 .skill-box:hover {
-background: #25213b;
 transform: scale(1.04);
 border-color: var(--secondary);
 }
 
 .skill-box h3 {
 color: var(--secondary);
-font-size: 17px;
+font-size: 16px;
 }
 
 /* PROJETS */
+
 .projects-container {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -217,7 +216,6 @@ transition: 0.3s;
 
 .project-card:hover {
 transform: translateY(-8px);
-box-shadow: 0 10px 30px #00000050;
 }
 
 .project-card h3 {
@@ -230,6 +228,7 @@ color: var(--text);
 }
 
 /* E5 ET VEILLE */
+
 .info-card {
 background: var(--card);
 padding: 30px;
@@ -247,7 +246,20 @@ margin-bottom: 15px;
 color: var(--text);
 }
 
+.download-area {
+margin-top: 25px;
+padding: 25px;
+background: #202039;
+border-radius: 12px;
+text-align: center;
+}
+
+.download-area p {
+margin-bottom: 20px;
+}
+
 /* CONTACT */
+
 .contact-card {
 background: var(--card);
 padding: 35px;
@@ -265,7 +277,8 @@ color: var(--secondary);
 text-decoration: none;
 }
 
-/* PIED DE PAGE */
+/* FOOTER */
+
 footer {
 background: #070710;
 text-align: center;
@@ -274,8 +287,10 @@ color: #88889e;
 border-top: 1px solid #292940;
 }
 
-/* RESPONSIVE */
+/* VERSION MOBILE */
+
 @media (max-width: 768px) {
+
 nav {
 flex-direction: column;
 gap: 15px;
@@ -288,7 +303,7 @@ gap: 12px;
 }
 
 header {
-min-height: 75vh;
+min-height: 70vh;
 }
 
 section {
@@ -299,12 +314,14 @@ padding: 60px 20px;
 font-size: 26px;
 }
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- MENU -->
+
 <nav>
 <div class="logo">MG.</div>
 
@@ -320,27 +337,36 @@ font-size: 26px;
 </ul>
 </nav>
 
+
 <!-- ACCUEIL -->
+
 <header id="accueil">
 
-
-<h1>MOUGNIN <span>Gnonsiekan </span></h1>
+<h1>MOUGNIN <span>Gnonsiekan</span></h1>
 
 <p>Étudiant en BTS SIO | Passionné d'informatique</p>
 
-<a href="#apropos" class="btn">Découvrir mon portfolio</a>
+<a href="#apropos" class="btn">
+Découvrir mon portfolio
+</a>
 
 </header>
 
-<!-- À PROPOS -->
+
+<!-- A PROPOS -->
+
 <section id="apropos">
 
-<h2 class="section-title">À <span>propos</span></h2>
+<h2 class="section-title">
+À <span>propos</span>
+</h2>
 
 <div class="about-content">
+
 <p>
-Je m'appelle MOUGNIN Gnonsiekan et je suis étudiant en
-BTS Services Informatiques aux Organisations (SIO).
+Je m'appelle MOUGNIN Gnonsiekan et je suis étudiant
+en BTS Services Informatiques aux Organisations (SIO).
+
 Passionné par l'informatique et les nouvelles technologies,
 je développe progressivement mes connaissances dans le
 domaine des systèmes, des réseaux et du numérique.
@@ -349,32 +375,46 @@ Mon objectif est d'acquérir de nouvelles compétences
 techniques et de construire mon avenir professionnel
 dans le secteur informatique.
 </p>
+
 </div>
 
 </section>
 
+
 <!-- FORMATION -->
+
 <section id="formation">
 
-<h2 class="section-title">Ma <span>formation</span></h2>
+<h2 class="section-title">
+Ma <span>formation</span>
+</h2>
 
 <div class="formation-card">
+
 <h3>BTS SIO – Services Informatiques aux Organisations</h3>
+
 <p><strong>Statut :</strong> Formation en cours</p>
+
 <p>
 Cette formation me permet d'apprendre les bases de
 l'informatique, notamment le développement, les systèmes,
 les réseaux et la gestion des services informatiques.
 </p>
+
 <p><strong>Options :</strong> SLAM / SISR</p>
+
 </div>
 
 </section>
 
-<!-- COMPÉTENCES -->
+
+<!-- COMPETENCES -->
+
 <section id="competences">
 
-<h2 class="section-title">Mes <span>compétences</span></h2>
+<h2 class="section-title">
+Mes <span>compétences</span>
+</h2>
 
 <div class="skills-container">
 
@@ -406,52 +446,71 @@ les réseaux et la gestion des services informatiques.
 
 </section>
 
+
 <!-- PROJETS -->
+
 <section id="projets">
 
-<h2 class="section-title">Mes <span>projets</span></h2>
+<h2 class="section-title">
+Mes <span>projets</span>
+</h2>
 
 <div class="projects-container">
 
 <div class="project-card">
+
 <h3>Projet 01 – Site web</h3>
+
 <p>
 Création d'un site web avec HTML et CSS.
-Apprentissage de la structure des pages et
-de la mise en forme.
+Apprentissage de la structure des pages
+et de la mise en forme.
 </p>
+
 </div>
 
 <div class="project-card">
+
 <h3>Projet 02 – Base de données</h3>
+
 <p>
 Découverte de MySQL et création d'une base
 de données permettant de stocker et organiser
 des informations.
 </p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- ÉPREUVE E5 -->
+
+<!-- EPREUVE E5 -->
+
 <section id="e5">
 
-<h2 class="section-title">Épreuve <span>E5</span></h2>
+<h2 class="section-title">
+Épreuve <span>E5</span>
+</h2>
 
 <div class="info-card">
+
 <h3>Conception et maintenance de solutions informatiques</h3>
 
 <p>
 L'épreuve E5 permet de présenter les compétences
 acquises durant la formation en BTS SIO.
+
 Elle porte notamment sur la conception, la mise en place
 et la maintenance de solutions informatiques.
 </p>
+
 </div>
 
+
 <div class="info-card">
+
 <h3>Mes réalisations professionnelles</h3>
 
 <p>
@@ -459,21 +518,60 @@ Au cours de ma formation, je développe des connaissances
 techniques à travers différents travaux pratiques,
 exercices et projets informatiques.
 </p>
+
+</div>
+
+
+<!-- TABLEAU DE SYNTHESE E5 -->
+
+<div class="info-card">
+
+<h3>Mon tableau de synthèse – Épreuve E5</h3>
+
+<p>
+Vous trouverez ci-dessous mon tableau de synthèse
+présentant les compétences travaillées durant
+ma formation en BTS SIO.
+</p>
+
+<div class="download-area">
+
+<p>
+Consultez ou téléchargez mon tableau
+de synthèse au format Excel.
+</p>
+
+<a href="tableau-synthese-e5.xlsx"
+class="btn"
+download>
+Télécharger mon tableau de synthèse E5
+</a>
+
+</div>
+
 </div>
 
 </section>
 
+
 <!-- VEILLE TECHNOLOGIQUE -->
+
 <section id="veille">
 
-<h2 class="section-title">Veille <span>technologique</span></h2>
+<h2 class="section-title">
+Veille <span>technologique</span>
+</h2>
 
 <div class="info-card">
-<h3>L'intelligence artificielle dans le développement informatique</h3>
+
+<h3>
+L'intelligence artificielle dans le développement informatique
+</h3>
 
 <p>
 Ma veille technologique porte sur l'évolution de
 l'intelligence artificielle dans le domaine informatique.
+
 Je m'intéresse notamment à des outils comme ChatGPT,
 GitHub Copilot et JetBrains AI Assistant.
 
@@ -481,40 +579,62 @@ Ces technologies permettent d'aider les développeurs
 à écrire du code, à détecter certaines erreurs et
 à améliorer leur productivité.
 </p>
+
 </div>
 
 <div class="info-card">
+
 <h3>Sources utilisées</h3>
-<p>GitHub Blog – OpenAI – ZDNet – Journal du Net</p>
+
+<p>
+GitHub Blog – OpenAI – ZDNet – Journal du Net
+</p>
+
 </div>
 
 </section>
 
+
 <!-- CONTACT -->
+
 <section id="contact">
 
-<h2 class="section-title">Me <span>contacter</span></h2>
+<h2 class="section-title">
+Me <span>contacter</span>
+</h2>
 
 <div class="contact-card">
 
-<p>Email :
+<p>
+Email :
 <a href="mailto:mougninchrist@example.com">
-mougnin.christ.jdlf@gmail.com
+mougnin.christ.jdlf@example.com
 </a>
 </p>
 
-<p>Téléphone :
-<a href="tel:0640824426">06 40 82 44 26</a>
+<p>
+Téléphone :
+<a href="tel:0640824426">
+06 40 82 44 26
+</a>
 </p>
 
 </div>
 
 </section>
 
-<!-- FOOTER -->
+
+<!-- PIED DE PAGE -->
+
 <footer>
-<p>© 2026 MOUGNIN Gnonsiekan – Portfolio BTS SIO</p>
+
+<p>
+© 2026 MOUGNIN Gnonsiekan – Portfolio BTS SIO
+</p>
+
 </footer>
 
 </body>
 </html>
+
+
